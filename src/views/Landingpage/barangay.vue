@@ -6,6 +6,7 @@
 				<div class="section-header">
 					<h2>Barangay</h2>
 					<p>Calapan has 62 barangays as shown in the following table.</p>
+					<p>Testing vue js in github .</p>
 				</div>
             </div>
     </section>
