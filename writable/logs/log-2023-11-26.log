@@ -1,0 +1,60 @@
+CRITICAL - 2023-11-26 01:57:51 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\DemographicController.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\BMSproject\\app\\Controllers\\DemographicController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DemographicController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DemographicController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\DemographicController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 01:58:14 --> CodeIgniter\RESTful\ResourceController::respond(): Argument #2 ($status) must be of type ?int, array given, called in C:\laragon\www\BMSproject\app\Controllers\DemographicController.php on line 20
+in SYSTEMPATH\API\ResponseTrait.php on line 87.
+ 1 APPPATH\Controllers\DemographicController.php(20): CodeIgniter\RESTful\ResourceController->respond(Object(App\Models\DemographicModel), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DemographicController->demographics()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DemographicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 02:00:19 --> CodeIgniter\RESTful\ResourceController::respond(): Argument #2 ($status) must be of type ?int, array given, called in C:\laragon\www\BMSproject\app\Controllers\DemographicController.php on line 20
+in SYSTEMPATH\API\ResponseTrait.php on line 87.
+ 1 APPPATH\Controllers\DemographicController.php(20): CodeIgniter\RESTful\ResourceController->respond(Object(App\Models\DemographicModel), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DemographicController->demographics()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DemographicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 02:00:28 --> CodeIgniter\RESTful\ResourceController::respond(): Argument #2 ($status) must be of type ?int, array given, called in C:\laragon\www\BMSproject\app\Controllers\DemographicController.php on line 20
+in SYSTEMPATH\API\ResponseTrait.php on line 87.
+ 1 APPPATH\Controllers\DemographicController.php(20): CodeIgniter\RESTful\ResourceController->respond(Object(App\Models\DemographicModel), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DemographicController->demographics()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DemographicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 02:00:29 --> CodeIgniter\RESTful\ResourceController::respond(): Argument #2 ($status) must be of type ?int, array given, called in C:\laragon\www\BMSproject\app\Controllers\DemographicController.php on line 20
+in SYSTEMPATH\API\ResponseTrait.php on line 87.
+ 1 APPPATH\Controllers\DemographicController.php(20): CodeIgniter\RESTful\ResourceController->respond(Object(App\Models\DemographicModel), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DemographicController->demographics()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DemographicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 02:00:30 --> CodeIgniter\RESTful\ResourceController::respond(): Argument #2 ($status) must be of type ?int, array given, called in C:\laragon\www\BMSproject\app\Controllers\DemographicController.php on line 20
+in SYSTEMPATH\API\ResponseTrait.php on line 87.
+ 1 APPPATH\Controllers\DemographicController.php(20): CodeIgniter\RESTful\ResourceController->respond(Object(App\Models\DemographicModel), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DemographicController->demographics()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DemographicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 02:51:22 --> Undefined variable $datas
+in APPPATH\Controllers\DemographicController.php on line 20.
+ 1 APPPATH\Controllers\DemographicController.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datas', 'C:\\laragon\\www\\BMSproject\\app\\Controllers\\DemographicController.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DemographicController->demographics()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DemographicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 12:44:13 --> Unclosed '{' on line 10
+in APPPATH\Controllers\DemographicController.php on line 44.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\BMSproject\\app\\Controllers\\DemographicController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DemographicController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DemographicController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\DemographicController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

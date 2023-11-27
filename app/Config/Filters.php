@@ -15,9 +15,8 @@ class Filters extends BaseConfig
      * Configures aliases for Filter classes to
      * make reading things nicer and simpler.
      *
-     * @var array<string, array<int, string>|string> [filter_name => classname]
-     *                                               or [filter_name => [classname1, classname2, ...]]
-     * @phpstan-var array<string, class-string|list<class-string>>
+     * @var array<string, string>
+     * @phpstan-var array<string, class-string>
      */
     public array $aliases = [
         'csrf'          => CSRF::class,
@@ -25,6 +24,7 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        'authGuard' => \App\Filters\AuthGuard::class,
     ];
 
     /**
