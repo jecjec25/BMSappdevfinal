@@ -14,10 +14,10 @@
 					<div class="header-top-right">
 						<ul>
 							<li class="header-top-contact">
-								<a href="#">Sign In</a>
+								<a href="/login">Sign In</a>
 							</li>
 							<li class="header-top-contact">
-								<a href="#">Register</a>
+								<a href="/register">Register</a>
 							</li>
 						</ul>
 					</div>

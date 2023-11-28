@@ -32,8 +32,6 @@
 			background: transparent;
 			cursor: auto;
 		}
-</style>
-<style>
 #loading-container {
   position: absolute;
   display: flex;

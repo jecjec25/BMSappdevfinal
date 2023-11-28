@@ -1,8 +1,9 @@
-<template>
-    <sidebars/>
+<template>    
     <headers/>
-    </template>
-    <script>
+    <sidebars/>
+
+</template>
+<script>
     import sidebars from '@/views/dashboard/include/sidebar.vue'
     import headers from '@/views/dashboard/include/header.vue'
     export default{
@@ -11,4 +12,4 @@
             headers
         }
     }
-    </script>
+</script>
