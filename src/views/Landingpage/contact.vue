@@ -1,4 +1,7 @@
-<template>		<!--subscription strat -->
+<template>		
+<headers/>
+<navs/>
+<!--subscription strat -->
 		<section id="contact"  class="subscription">
 			<div class="container">
 				<div class="subscribe-title text-center">
@@ -25,4 +28,18 @@
 
 		</section><!--/subscription-->	
 		<!--subscription end -->
+		<footers/>
 </template>
+
+<script>
+import headers from '@/views/Landingpage/include/header.vue'
+import navs from '@/views/Landingpage/include/nav.vue'
+import footers from '@/views/Landingpage/include/footer.vue'
+export default{
+	components:{
+		headers,
+		navs,
+		footers
+	}
+}
+</script>

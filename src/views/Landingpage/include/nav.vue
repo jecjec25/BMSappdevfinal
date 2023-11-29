@@ -17,9 +17,9 @@
 						<li><a href="/">Home</a></li>
 						<li><a href="/about">About</a></li>
 						<li><a href="/barangay">Barangays in Calapan</a></li>
-						<li class="scroll"><a href="#review">review</a></li>
-						<li class="scroll"><a href="#blog">blog</a></li>
-						<li class="scroll"><a href="#contact">contact</a></li>
+						<li class="scroll"><a href="/review">review</a></li>
+						<li class="scroll"><a href="/blog">blog</a></li>
+						<li class="scroll"><a href="/contact">contact</a></li>
 					</ul><!--/.nav -->
 				</div><!-- /.navbar-collapse -->
 			</div><!--/.container-->
