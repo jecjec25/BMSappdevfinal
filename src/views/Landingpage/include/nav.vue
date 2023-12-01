@@ -15,8 +15,8 @@
 				<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
 						<li><a href="/">Home</a></li>
-						<li><a href="/about">About</a></li>
 						<li><a href="/barangay">Barangays in Calapan</a></li>
+						<li><a href="/about">About</a></li>
 						<li class="scroll"><a href="/review">review</a></li>
 						<li class="scroll"><a href="/blog">blog</a></li>
 						<li class="scroll"><a href="/contact">contact</a></li>
