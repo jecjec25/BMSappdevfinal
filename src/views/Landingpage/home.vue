@@ -18,18 +18,17 @@
 				</div>
                 </div>
 		</section><!--/.list-topics-->
-		
-		<section id="works" class="works" style="background-color: #9b51e0;">
+		<section id="works" class="works" style="background-color: #cea4f6;">
 			<div class="container">
 				<div class="section-header">
 				<br>
 				<br>
-					<h2 style="color: white;">About</h2>
+					<h2 style="color: rgb(17, 14, 14);">About</h2>
 					<img src="<?php base_url()?> asset3\images\about\img2.jpg" alt="General Information">
 					<br>
 					<br>
 					<br>		
-					<p class="left-align-text" style="color: white;">
+					<p class="left-align-text" style="color: rgb(15, 13, 13);">
 						At present Calapan City has an area of only 250.06 sq.km. (according to LMB).
 						It has also jurisdiction over the three (3) Baco Islets on the Calapan Bay and
 						the two (2) Silonay IsSSlets.
