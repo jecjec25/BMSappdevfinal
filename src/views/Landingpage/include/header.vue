@@ -1,5 +1,5 @@
 <template>
-<header id="header-top" class="header-top">
+<header id="header-top" class="header-top" style="background-color: rgb(220, 222, 241)">
 			<ul>
 				<li>
 					<div class="header-top-left">
@@ -14,10 +14,10 @@
 					<div class="header-top-right">
 						<ul>
 							<li class="header-top-contact">
-								<a href="/login" style="color: black; font-weight: bold;font-size: small">Sign In</a>
+								<a href="/login" style="color: black; font-weight: bold;font-size: small; font-family: 'Poppins';">Sign In</a>
 							</li>
 							<li class="header-top-contact">
-								<a href="/register" style="color: black; font-weight: bold;font-size: small">Register</a>
+								<a href="/register" style="color: black; font-weight: bold;font-size: small; font-family: 'Poppins';">Register</a>
 							</li>
 						</ul>
 					</div>

@@ -1,9 +1,9 @@
 <template>
 	<headers/>
-<section id="reviews" class="reviews">
+<section id="reviews" class="reviews" style="font-family: 'Poppins';">
 			<div class="section-header">
-				<h2>clients reviews</h2>
-				<p>What our client say about us</p>
+				<h2 style="font-family: 'Poppins';">clients reviews</h2>
+				<p style="font-family: 'Poppins';">What our client say about us</p>
 			</div><!--/.section-header-->
 			<div class="reviews-content">
 				<div class="testimonial-carousel">

@@ -1,10 +1,10 @@
 <template>
 	<headers/>
-<section id="blog" class="blog" >
+<section id="blog" class="blog" style="font-family: 'Poppins';">
 			<div class="container">
 				<div class="section-header">
-					<h2>news and articles</h2>
-					<p>Always upto date with our latest News and Articles </p>
+					<h2 style="font-family: 'Poppins';">news and articles</h2>
+					<p style="font-family: 'Poppins';">Always upto date with our latest News and Articles </p>
 				</div><!--/.section-header-->
 				<div class="blog-content">
 					<div class="row">
