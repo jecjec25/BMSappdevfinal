@@ -79,6 +79,7 @@
 				<div class="section-header">
 					<h2 style="color: black; font-family: 'Poppins';">Barangay</h2>
 					<p style="color: black; font-family: 'Poppins';">Calapan has 62 barangays as shown in the following table.</p>
+					<demographys/>
 				</div>
 		</div>
         </section>
@@ -87,10 +88,12 @@
 </template>
 <script>
 import headers from '@/views/Landingpage/include/header.vue'
+import demographys from '@/views/Landingpage/include/demography.vue'
 import footers from '@/views/Landingpage/include/footer.vue'
 export default{
 	components:{
 		headers,
+		demographys,
 		footers
 	}
 }
