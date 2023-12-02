@@ -1,6 +1,5 @@
 <template>
     <headers/>
-    <navs/>
     <section id="works" class="works" style="background-color: #9b51e0;">
         <div class="container">
             <div class="section-header">
@@ -59,12 +58,10 @@
 
 <script>
 import headers from '@/views/Landingpage/include/header.vue'
-import navs from '@/views/Landingpage/include/nav.vue'
 import footers from '@/views/Landingpage/include/footer.vue'
 export default{
 	components:{
 		headers,
-		navs,
 		footers
 	}
 }

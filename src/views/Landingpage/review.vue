@@ -1,6 +1,5 @@
 <template>
 	<headers/>
-	<navs/>
 <section id="reviews" class="reviews">
 			<div class="section-header">
 				<h2>clients reviews</h2>
@@ -261,12 +260,10 @@
 
 <script>
 import headers from '@/views/Landingpage/include/header.vue'
-import navs from '@/views/Landingpage/include/nav.vue'
 import footers from '@/views/Landingpage/include/footer.vue'
 export default{
 	components:{
 		headers,
-		navs,
 		footers
 	}
 }
