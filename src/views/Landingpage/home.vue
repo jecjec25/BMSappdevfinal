@@ -25,7 +25,7 @@
 				<br>
 				<br>
 					<h2 style="color: rgb(17, 14, 14);">About</h2>
-					<img src="@/assets/img2.jpg" alt="General Information">
+					<img src="@/assets/img/img2.jpg" alt="General Information">
 							
 					<p class="left-align-text" style="color: rgb(15, 13, 13);font-family: 'Poppins';">
 						At present Calapan City has an area of only 250.06 sq.km. (according to LMB).
@@ -74,26 +74,16 @@
 			</div>
 		</section>
 		<br>
-		<section id="explore" class="explore" style="background-color: rgb(119, 119, 238); font-family: 'Poppins';">
-			<div class="container">
-				<div class="section-header">
-					<h2 style="color: black; font-family: 'Poppins';">Barangay</h2>
-					<p style="color: black; font-family: 'Poppins';">Calapan has 62 barangays as shown in the following table.</p>
-					<demographys/>
-				</div>
-		</div>
-        </section>
+
 		<footers/>
 
 </template>
 <script>
 import headers from '@/views/Landingpage/include/header.vue'
-import demographys from '@/views/Landingpage/include/demography.vue'
 import footers from '@/views/Landingpage/include/footer.vue'
 export default{
 	components:{
 		headers,
-		demographys,
 		footers
 	}
 }

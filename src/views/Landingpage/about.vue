@@ -6,7 +6,7 @@
             <br>
             <br>				
                 <h2 style="color: rgb(13, 10, 10);">About</h2>
-                <img src="@/assets/img2.jpg" alt="General Information">
+                <img src="@/assets/img/img2.jpg" alt="General Information">
                 <p class="left-align-text" style="color: rgb(18, 13, 13); font-family: 'Poppins';">
                     At present Calapan City has an area of only 250.06 sq.km. (according to LMB).
                     It has also jurisdiction over the three (3) Baco Islets on the Calapan Bay and

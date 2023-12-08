@@ -11,7 +11,7 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="single-blog-item">
 								<div class="single-blog-item-img">
-									<img src="asset3/images/blog/b1.jpg" alt="blog image">
+									<img src="@/assets/img/calapan.jpg" alt="blog image">
 								</div>
 								<div class="single-blog-item-txt">
 									<h2><a href="#">How to find your Desired Place more quickly</a></h2>
@@ -25,7 +25,7 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="single-blog-item">
 								<div class="single-blog-item-img">
-									<img src="asset3/images/blog/b2.jpg" alt="blog image">
+									<img src="@/assets/img/place.jpg" alt="blog image">
 								</div>
 								<div class="single-blog-item-txt">
 									<h2><a href="#">How to find your Desired Place more quickly</a></h2>
@@ -39,7 +39,7 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="single-blog-item">
 								<div class="single-blog-item-img">
-									<img src="asset3/images/blog/b3.jpg" alt="blog image">
+									<img src="@/assets/img/Museum.jpg" alt="blog image">
 								</div>
 								<div class="single-blog-item-txt">
 									<h2><a href="#">How to find your Desired Place more quickly</a></h2>
