@@ -1,6 +1,9 @@
 <template>
     <sidebars/>
     <headers/>
+
+    
+
     </template>
     <script>
     import sidebars from '@/views/dashboard/include/sidebar.vue'

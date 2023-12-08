@@ -1,4 +1,6 @@
-
+<template>
+  
+</template>
 <style>
 #loading-container {
   position: absolute;
@@ -21,4 +23,3 @@ a {
   text-decoration: none;
 }
 </style>
-</template>

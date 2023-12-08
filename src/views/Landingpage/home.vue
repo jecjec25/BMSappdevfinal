@@ -1,6 +1,5 @@
 <template>
 	<headers/>
-	<navs/>
   			<!--welcome-hero start -->
 			<section id="home" class="welcome-hero">
 			<div class="container">
@@ -9,7 +8,7 @@
                 <span style="color: #9b51e0;">Calapan City</span> <br>
                 <span style="color: #00aa00;">Province of Oriental Mindoro</span>
             	</h2>
-					<p>
+					<p style="font-family: 'Poppins';">
 					The city has a land area of 250.06 square kilometers or 96.55 square miles which constitutes 
 					5.90% of Oriental Mindoro's total area. Its population as determined by the 2020 Census was 145,786.
 					This represented 16.05% of the total population of Oriental Mindoro province, or 4.52% of the overall 
@@ -19,18 +18,16 @@
 				</div>
                 </div>
 		</section><!--/.list-topics-->
-		
-		<section id="works" class="works" style="background-color: #9b51e0;">
+		<br>
+		<section id="works" class="works" style="background-color: #cea4f6;">
 			<div class="container">
 				<div class="section-header">
 				<br>
 				<br>
-					<h2 style="color: white;">About</h2>
-					<img src="<?php base_url()?> asset3\images\about\img2.jpg" alt="General Information">
-					<br>
-					<br>
-					<br>		
-					<p class="left-align-text" style="color: white;">
+					<h2 style="color: rgb(17, 14, 14);">About</h2>
+					<img src="@/assets/img/img2.jpg" alt="General Information">
+							
+					<p class="left-align-text" style="color: rgb(15, 13, 13);font-family: 'Poppins';">
 						At present Calapan City has an area of only 250.06 sq.km. (according to LMB).
 						It has also jurisdiction over the three (3) Baco Islets on the Calapan Bay and
 						the two (2) Silonay IsSSlets.
@@ -76,25 +73,17 @@
 				</div>
 			</div>
 		</section>
-		<section id="explore" class="explore">
-			<div class="container">
-				<div class="section-header">
-					<h2>Barangay</h2>
-					<p>Calapan has 62 barangays as shown in the following table.</p>
-				</div>
-		</div>
-        </section>
+		<br>
+
 		<footers/>
 
 </template>
 <script>
 import headers from '@/views/Landingpage/include/header.vue'
-import navs from '@/views/Landingpage/include/nav.vue'
 import footers from '@/views/Landingpage/include/footer.vue'
 export default{
 	components:{
 		headers,
-		navs,
 		footers
 	}
 }

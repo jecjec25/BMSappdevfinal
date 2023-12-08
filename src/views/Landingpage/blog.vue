@@ -1,16 +1,17 @@
 <template>
-<section id="blog" class="blog" >
+	<headers/>
+<section id="blog" class="blog" style="font-family: 'Poppins';">
 			<div class="container">
 				<div class="section-header">
-					<h2>news and articles</h2>
-					<p>Always upto date with our latest News and Articles </p>
+					<h2 style="font-family: 'Poppins';">news and articles</h2>
+					<p style="font-family: 'Poppins';">Always upto date with our latest News and Articles </p>
 				</div><!--/.section-header-->
 				<div class="blog-content">
 					<div class="row">
 						<div class="col-md-4 col-sm-6">
 							<div class="single-blog-item">
 								<div class="single-blog-item-img">
-									<img src="asset3/images/blog/b1.jpg" alt="blog image">
+									<img src="@/assets/img/calapan.jpg" alt="blog image">
 								</div>
 								<div class="single-blog-item-txt">
 									<h2><a href="#">How to find your Desired Place more quickly</a></h2>
@@ -24,7 +25,7 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="single-blog-item">
 								<div class="single-blog-item-img">
-									<img src="asset3/images/blog/b2.jpg" alt="blog image">
+									<img src="@/assets/img/place.jpg" alt="blog image">
 								</div>
 								<div class="single-blog-item-txt">
 									<h2><a href="#">How to find your Desired Place more quickly</a></h2>
@@ -38,7 +39,7 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="single-blog-item">
 								<div class="single-blog-item-img">
-									<img src="asset3/images/blog/b3.jpg" alt="blog image">
+									<img src="@/assets/img/Museum.jpg" alt="blog image">
 								</div>
 								<div class="single-blog-item-txt">
 									<h2><a href="#">How to find your Desired Place more quickly</a></h2>
@@ -55,4 +56,16 @@
 			
 		</section><!--/.blog-->
 		<!--blog end -->
-        </template>
+		<footers/>
+    </template>
+
+<script>
+import headers from '@/views/Landingpage/include/header.vue'
+import footers from '@/views/Landingpage/include/footer.vue'
+export default{
+	components:{
+		headers,
+		footers
+	}
+}
+</script>

@@ -4,5 +4,5 @@ import './registerServiceWorker'
 import router from './router'
 import axios from 'axios'
 
-axios.defaults.baseURL="http://bmsproject.test/"
+axios.defaults.baseURL="http://Localhost:8080/"
 createApp(App).use(router).mount('#app')

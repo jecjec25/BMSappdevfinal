@@ -1,14 +1,13 @@
 <template>
     <headers/>
-    <navs/>
-    <section id="works" class="works" style="background-color: #9b51e0;">
+    <section id="works" class="works" style="background-color: #ca98fa;">
         <div class="container">
             <div class="section-header">
             <br>
             <br>				
-                <h2 style="color: white;">About</h2>
-                <img src="<%= BASE_URL %>asset3\images\about\img2.jpg" alt="General Information">
-                <p class="left-align-text" style="color: white;">
+                <h2 style="color: rgb(13, 10, 10);">About</h2>
+                <img src="@/assets/img/img2.jpg" alt="General Information">
+                <p class="left-align-text" style="color: rgb(18, 13, 13); font-family: 'Poppins';">
                     At present Calapan City has an area of only 250.06 sq.km. (according to LMB).
                     It has also jurisdiction over the three (3) Baco Islets on the Calapan Bay and
                     the two (2) Silonay IsSSlets.
@@ -59,12 +58,10 @@
 
 <script>
 import headers from '@/views/Landingpage/include/header.vue'
-import navs from '@/views/Landingpage/include/nav.vue'
 import footers from '@/views/Landingpage/include/footer.vue'
 export default{
 	components:{
 		headers,
-		navs,
 		footers
 	}
 }

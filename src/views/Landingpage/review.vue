@@ -1,8 +1,9 @@
 <template>
-<section id="reviews" class="reviews">
+	<headers/>
+<section id="reviews" class="reviews" style="font-family: 'Poppins';">
 			<div class="section-header">
-				<h2>clients reviews</h2>
-				<p>What our client say about us</p>
+				<h2 style="font-family: 'Poppins';">clients reviews</h2>
+				<p style="font-family: 'Poppins';">What our client say about us</p>
 			</div><!--/.section-header-->
 			<div class="reviews-content">
 				<div class="testimonial-carousel">
@@ -253,6 +254,17 @@
 
 		</section><!--/.counter-->	
 		<!-- statistics end -->
-
+<footers/>
 
 </template>
+
+<script>
+import headers from '@/views/Landingpage/include/header.vue'
+import footers from '@/views/Landingpage/include/footer.vue'
+export default{
+	components:{
+		headers,
+		footers
+	}
+}
+</script>

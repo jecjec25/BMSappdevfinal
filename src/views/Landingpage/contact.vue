@@ -1,11 +1,13 @@
-<template>		<!--subscription strat -->
-		<section id="contact"  class="subscription">
+<template>		
+<headers/>
+<!--subscription strat -->
+		<section id="contact"  class="subscription" style="font-family: 'Poppins';">
 			<div class="container">
 				<div class="subscribe-title text-center">
-					<h2>
+					<h2 style="font-family: 'Poppins';">
 						do you want to add your business listing with us?
 					</h2>
-					<p>
+					<p style="font-family: 'Poppins';">
 						Listrace offer you to list your business with us and we very much able to promote your Business.
 					</p>
 				</div>
@@ -25,4 +27,16 @@
 
 		</section><!--/subscription-->	
 		<!--subscription end -->
+		<footers/>
 </template>
+
+<script>
+import headers from '@/views/Landingpage/include/header.vue'
+import footers from '@/views/Landingpage/include/footer.vue'
+export default{
+	components:{
+		headers,
+		footers
+	}
+}
+</script>

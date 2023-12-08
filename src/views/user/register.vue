@@ -1,49 +1,86 @@
 <template>
-    	<div class="wrapper wrapper-login">
+<body>
 
-        <div class="container container-login animated fadeIn">
+<form>
+ <div class="container">
+    <h2>Register - Barangay Management System</h2>
+    <label for="uname"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lname" required>
 
-    <h3 class="text-center">Register - Barangay Management System</h3>
-    <div class="login-form">
-        <form method="POST" action="/register" autocomplete="off">
-            <div class="form-group form-floating-label">
-                <input id="lastname" name="lastname" type="text" class="form-control input-border-bottom" required>
-                <label for="lastname" class="placeholder">Last Name</label>
-            </div>
-            <div class="form-group form-floating-label">
-                <input id="firstname" name="firstname" type="text" class="form-control input-border-bottom" required>
-                <label for="firstname" class="placeholder">First Name</label>
-            </div>
-            <div class="form-group form-floating-label">
-                <input id="email" name="email" type="text" class="form-control input-border-bottom" required>
-                <label for="email" class="placeholder">Email Address</label>
-            </div>
-            <div class="form-group form-floating-label">
-                <input id="username" name="username" type="text" class="form-control input-border-bottom" required>
-                <label for="username" class="placeholder">Username</label>
-            </div>
-            <div class="form-group form-floating-label">
-                <input id="password" name="password" type="password" class="form-control input-border-bottom" required>
-                <label for="password" class="placeholder">Password</label>
-                <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-            </div>
-            <div class="form-group form-floating-label">
-                <input id="confirmpassword" name="confirmpassword" type="password" class="form-control input-border-bottom" required>
-                <label for="confirmpassword" class="placeholder">Confirm Password</label>
-                <span toggle="#confirmpassword" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-            </div>
-            <div class="form-action mb-3 d-flex flex-column gap-2">
-                <button type="submit" class="btn btn-primary btn-block fw-bold">Register</button>
+    <label for="uname"><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="fname" required>
 
-                <a href="/login" class="btn btn-success btn-block text-white fw-bold">I already have an account</a>
-            </div>
-        </form>
-    </div>
-</div>
-</div>
+    <label for="uname"><b>Email Address</b></label>
+    <input type="text" placeholder="Enter Email Address" name="uname" required>
 
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw" required>
+
+    <a href="/login" class="btn btn-primary">Register</a>
+
+    <a href="/login">Already have an account</a>
+ </div>
+</form>
+
+</body>
 </template>
 
-<script>
-    
-</script>
+<style>
+body {
+ font-family: Arial, sans-serif;
+ background-image: url('@/assets/img/R.jpg');
+}
+
+.container {
+align-items: center;
+ width: 30%;
+ padding: 16px;
+ background-color: rgb(253, 252, 252);
+ margin: 0 auto;
+ margin-top: 40px;
+ border: 1px solid black;
+ border-radius: 4px;
+ box-shadow: 10px 10px 5px 5px rgba(2, 1, 1, 0.1);
+}
+h2{
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px
+}
+
+.container label {
+ margin-bottom: 5px;
+}
+
+.container input[type=text], .container input[type=password] {
+ width: 100%;
+ padding: 3px;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ margin-bottom: 15px;
+ background-color: #f1f1f1;
+}
+
+.container a {
+ background-color: #4CAF50;
+ text-align: center;
+ color: white;
+ padding: 6px 8px;
+ margin-top: 5px;
+ border: none;
+ cursor: pointer;
+ width: 100%;
+ opacity: 0.9;
+}
+
+.container input[type=submit]:hover {
+ opacity:1;
+}
+</style>
