@@ -1,12 +1,11 @@
 <template>
-
     <div class="container">
                 <div class="row">
                     <div class="col-md-12 mt-5">
                         <div class="card">
                             <div class="card-header">
                                 <h4>Add Barangay
-                                <a href="#" class= "btn btn-danger float-right">Back</a>
+                                <a href="/demographics" class= "btn btn-danger float-right">Back</a>
                                 </h4>
                             </div>
                             <div class="card-body">
@@ -114,7 +113,7 @@
             try {
                 const ins = await axios.post("admin/save",{
                     number: this.number,
-                    barangay: this.baranggay,
+                    barangay: this.barangay,
                     landarea: this.landarea,
                     popu2015: this.popu2015,
                     popuden2020: this.popuden2020,

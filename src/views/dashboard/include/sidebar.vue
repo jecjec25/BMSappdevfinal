@@ -1,25 +1,6 @@
 <template>
-    <div class="page-wrapper">
-       <!-- HEADER MOBILE-->
-       <header class="header-mobile d-block d-lg-none">
-           <div class="header-mobile__bar">
-               <div class="container-fluid">
-                   <div class="header-mobile-inner">
-                       <a class="logo" href="index.html">
-                           <!-- <img src="images/icon/logo.png" alt="CoolAdmin" /> -->
-                       </a>
-                       <button class="hamburger hamburger--slider" type="button">
-                           <span class="hamburger-box">
-                               <span class="hamburger-inner"></span>
-                           </span>
-                       </button>
-                   </div>
-               </div>
-           </div>
-       </header>
        
        <!-- PAGE CONTAINER-->
-       <div class="page-container">
            <!-- HEADER DESKTOP-->
            <header class="header-desktop">
                <div class="section__content section__content--p30">
@@ -193,6 +174,5 @@
                </div>
            
            </header>
-    </div>
-  </div>
+
 </template>
