@@ -1,6 +1,6 @@
 <template>
     <headers/>
-    <section id="works" class="works" style="background-color: #ca98fa;">
+    <section id="works" class="works" style="background-color: #ff9999;">
         <div class="container">
             <div class="section-header">
             <br>
