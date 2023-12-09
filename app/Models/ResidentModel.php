@@ -6,13 +6,13 @@ use CodeIgniter\Model;
 
 class ResidentModel extends Model
 {
-    protected $table            = 'residents';
+    protected $table            = 'tbl_residentinfo';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['kind_of_id', 'idNo', 'citizenship', 'picture', 'Barangay', 'firstname', 'middlename', 'lastname', 'alias', 'birthplace', 'birthdate', 'age', 'civilstatus', 'gender', 'sitio', 'phone', 'email', 'occupation', 'address', 'is_4ps', 'is_pwd', 'is_senior'];
+    protected $allowedFields    = ['last_name', 'first_name', 'middle_name', 'birth_date', 'age', 'purok_id', 'civil_status', 'religion', 'gender', 'complete_address', 'contact_no', 'with_philhealth', 'with_sss', 'income', 'member_4ps', 'voter_status'];
 
     // Dates
     protected $useTimestamps = false;
