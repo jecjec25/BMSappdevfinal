@@ -4,16 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class DemographicModel extends Model
+class BarangayModel extends Model
 {
-    protected $DBGroup          = 'default';
-    protected $table            = 'demographicdata';
+    protected $table            = 'tbl_barangay';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['official_id', 'resident_id', 'term_start', 'term_end', 'term_index', 'set_current', 'remarks'];
+    protected $allowedFields    = ['barangay_id', 'barangay_name', 'barangay_remarks'];
 
     // Dates
     protected $useTimestamps = false;

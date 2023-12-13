@@ -12,7 +12,7 @@ class ResidentModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['last_name', 'first_name', 'middle_name', 'birth_date', 'age', 'purok_id', 'civil_status', 'religion', 'gender', 'complete_address', 'contact_no', 'with_philhealth', 'with_sss', 'income', 'member_4ps', 'voter_status'];
+    protected $allowedFields    = ['last_name', 'first_name', 'middle_name', 'birth_date', 'age', 'barangay_id', 'purok_id', 'civil_status', 'religion', 'gender', 'complete_address', 'contact_no', 'with_philhealth', 'with_sss', 'income', 'member_4ps', 'voter_status'];
 
     // Dates
     protected $useTimestamps = false;
