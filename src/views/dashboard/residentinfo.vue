@@ -17,8 +17,12 @@
                   <div class="col-md-12 mt-5">
                       <div class="card">
                           <div class="card-header">
-                              <h4 style="font-size:23px; font:bold;">Resident Data</h4>
-                              <a href="/rcreate" class= "btn btn-primary float-right">Add Resident</a>
+                            <h4 style="font-size:28px; font:bold;">Resident Data</h4>
+                            <form action="/rcreate">
+                                    <div>
+                                        <button class="btn-primary float-right" style="font-size:25px; border-radius: 5px;">Add Resident</button>
+                                    </div>
+                            </form>
                           </div>
                           <div class="card-body"> 
                               <resid/>

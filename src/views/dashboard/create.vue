@@ -4,15 +4,16 @@
                     <div class="col-md-12 mt-5">
                         <div class="card">
                             <div class="card-header">
-                                <h4>Add Barangay
-                                <a href="/demographics" class= "btn btn-danger float-right">Back</a>
-                                </h4>
+                                <h4 style="font-size:28px; font:bold;">Add Barangay</h4>
+                                <form action="/demographics">
+                                    <div>
+                                        <button class="btn-danger float-right" style="font-size:25px; border-radius: 5px;">Back</button>
+                                    </div>
+                                </form>
                             </div>
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-6">
-                                
-                                
                                         <form @submit.prevent="saveData" >
                                             <div class="col-md-6">                                
                                             <div class="form-group">
@@ -23,7 +24,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Barangay</label>
-                                            <input type="text" v-model="barangay" class="form-control" placeholder="Enter Barangay Name">
+                                            <input type="text" v-model="barangay_name" class="form-control" placeholder="Enter Barangay Name">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -91,34 +92,34 @@
             </div>
 </template>
 <script>
-
         import axios from 'axios'
     export default{
         data(){
             return {
                     number:'',
-                    barangay: '',
+                    barangay_name: '',
                     landarea:'',
                     popu2015: '',
                     popuden2020: '',
                     popu2020: '',
                     projpopu2023: '',
+                    household2020:'',
                     household2023: '',
                     growthrate: '',
             }            
         },
         methods:{
             async saveData(){
-            
             try {
-                const ins = await axios.post("admin/save",{
+                const ins = await axios.post("/admin/save",{
                     number: this.number,
-                    barangay: this.barangay,
+                    barangay_name: this.barangay_name,
                     landarea: this.landarea,
                     popu2015: this.popu2015,
                     popuden2020: this.popuden2020,
                     popu2020: this.popu2020,
                     projpopu2023: this.projpopu2023,
+                    household2020:this.household2020,
                     household2023: this.household2023,
                     growthrate: this.growthrate
                 });
@@ -126,13 +127,7 @@
             } catch (error) {
                 console.log(error);    
             }    
-            
             }
         }
-
-
-
-
     }
-
 </script>

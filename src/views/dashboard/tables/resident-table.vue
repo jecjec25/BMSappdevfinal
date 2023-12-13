@@ -3,22 +3,23 @@
         <table>
             <thead>
                 <tr>
-                    <th>last_name</th>
-                    <th>first_name</th>
-                    <th>middle_name</th>
-                    <th>birth_date</th>
-                    <th>age</th>
-                    <th>purok_id</th>
-                    <th>civil_status</th>
-                    <th>religion</th>
-                    <th>gender</th>
-                    <th>complete_address</th>
-                    <th>contact_no</th>
-                    <th>with_philhealth</th>
-                    <th>with_sss</th>
-                    <th>income</th>
-                    <th>member_4ps</th>
-                    <th>voter_status</th>                  
+                    <th>Last Name</th>
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Birth Day</th>
+                    <th>Age</th>
+                    <th>barangay</th>
+                    <th>purok</th>
+                    <th>Civil Status</th>
+                    <th>Religion</th>
+                    <th>Gender</th>
+                    <th>Complete Address</th>
+                    <th>Contact Number</th>
+                    <th>Philheath Member</th>
+                    <th>SSS Member</th>
+                    <th>Income</th>
+                    <th>4PS Memeber</th>
+                    <th>Voter Status</th>                  
                 </tr>
             </thead>
             <tbody>
@@ -28,7 +29,8 @@
                     <td>{{ resident.middle_name }}</td>
                     <td>{{ resident.birth_date }}</td>
                     <td>{{ resident.age }}</td>
-                    <td>{{ resident.purok_id }}</td>
+                    <td>{{ resident.barangay_name }}</td>
+                    <td>{{ resident.purok_name }}</td>
                     <td>{{ resident.civil_status }}</td>
                     <td>{{ resident.religion }}</td>
                     <td>{{ resident.gender }}</td>
