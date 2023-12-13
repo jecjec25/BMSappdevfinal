@@ -4,8 +4,8 @@
                     <div class="col-md-12 mt-5">
                         <div class="card">
                             <div class="card-header">
-                                <h4 style="font-size:28px; font:bold;">Add Resident</h4>
-                                <form action="/residentinfo">
+                                <h4 style="font-size:28px; font:bold;">Add Barangay Official</h4>
+                                <form action="/BrgyOfficial">
                                     <div>
                                         <button class="btn-danger float-right" style="font-size:25px; border-radius: 5px;">Back</button>
                                     </div>
@@ -208,56 +208,4 @@
         }
        
 };
-
-        // data(){
-        //     return {
-        //             last_name:'',
-        //             first_name: '',
-        //             middle_name:'',
-        //             birth_date: '',
-        //             age: '',
-        //             purok_id: '',
-        //             civil_status: '',
-        //             religion: '',
-        //             gender: '',
-        //             complete_address: '',
-        //             contact_no: '',
-        //             with_philhealth: '',
-        //             with_sss: '',
-        //             income: '',
-        //             member_4ps: '',
-        //             voter_status: '',
-        //     }            
-        //},
-
-        // methods:{
-        //     async saveData(){
-            
-        //     try {
-        //         const ins = await axios.post("admin/save",{
-        //             last_name: this.last_name,
-        //             first_name: this.first_name,
-        //             middle_name: this.middle_name,
-        //             birth_date: this.birth_date,
-        //             age: this.age,
-        //             purok_id: this.purok_id,
-        //             civil_status: this.civil_status,
-        //             religion: this.religion,
-        //             gender: this.gender,
-        //             complete_address: this.complete_address,
-        //             contact_no: this.contact_no,
-        //             with_philhealth: this.with_philhealth,
-        //             with_sss: this.with_sss,
-        //             income: this.income,
-        //             member_4ps: this.member_4ps,
-        //             voter_status: this.voter_status
-
-        //         });
-            
-        //     } catch (error) {
-        //         console.log(error);    
-        //     }    
-            
-        //     }
-
 </script>

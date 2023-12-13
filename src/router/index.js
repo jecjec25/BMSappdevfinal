@@ -7,6 +7,11 @@ const routes = [
     component: home
   },
   {
+    path: '/Insertbarangay',
+    name: 'brgy',
+    component: () => import('../views/dashboard/include/baranggay.vue')
+  },  
+  {
     path: '/about',
     name: 'about',
     // route level code-splitting
@@ -80,6 +85,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/dashboard/demographics.vue')
   },
   {
+    path: '/create',
+    name: 'create',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/dashboard/create.vue')
+  },
+  {
     path: '/brgycertificate',
     name: 'brgycertificate',
     // route level code-splitting
@@ -88,12 +101,12 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/dashboard/brgycertificate.vue')
   },
   {
-    path: '/certireq',
-    name: 'certireq',
+    path: '/brgyofficial',
+    name: 'brgyofficial',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/dashboard/CertiReq.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/dashboard/BrgyOfficial.vue')
   },
   {
     path: '/announcement',
@@ -112,12 +125,12 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/dashboard/residentinfo.vue')
   },
   {
-    path: '/create',
-    name: 'create',
+    path: '/rcreate',
+    name: 'rcreate',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/dashboard/create.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/dashboard/rcreate.vue')
   },
   {
     path: '/login',

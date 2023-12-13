@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class = "cons">
         <table>
             <thead>
                 <tr>
@@ -18,7 +18,7 @@
             <tbody>
                 <tr v-for="info in info">
                     <td>{{ info.number }}</td>
-                    <td>{{ info.barangay }}</td>
+                    <td>{{ info.barangay_name }}</td>
                     <td>{{ info.landarea }}</td>
                     <td>{{ info.popu2015 }}</td>
                     <td>{{ info.popuden2020 }}</td>
@@ -59,14 +59,15 @@ export default{
         }
 </script>
 <style>
-table {
+  table {
   width: 10%;
-  table-layout: fixed;
-
+ 
 }
-
+.cons{
+    overflow-y:scroll;
+}
 th, td {
-  width: 100px; /* Adjust the percentage as needed */
+  width: 90px; /* Adjust the percentage as needed */
 }
 </style>
 

@@ -69,8 +69,8 @@
                                 <i class="fas fa-chart-bar"></i>Demograpic Data</a>
                         </li>
                         <li>
-                            <a href="/certireq">
-                                <i class="fas fa-table"></i>Certificate Request</a>
+                            <a href="/brgyofficial">
+                                <i class="fas fa-table"></i>Barangay Official</a>
                         </li>
                         <li>
                             <a href="/residentinfo">

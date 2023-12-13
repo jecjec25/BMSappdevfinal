@@ -1,36 +1,76 @@
 <template>
-<body>
 
-<form>
+<form @submit.prevent="register">
  <div class="container">
     <h2>Register - Barangay Management System</h2>
-    <label for="uname"><b>Last Name</b></label>
-    <input type="text" placeholder="Enter Last Name" name="lname" required>
+    <label for="full_name"><b>Full Name</b></label>
+    <input type="text" placeholder="Enter full name" v-model="full_name" required>
 
-    <label for="uname"><b>First Name</b></label>
-    <input type="text" placeholder="Enter First Name" name="fname" required>
+    <label for="position"><b>Position</b></label>
+    <input type="text" placeholder="Position" v-model="position" required>
 
-    <label for="uname"><b>Email Address</b></label>
-    <input type="text" placeholder="Enter Email Address" name="uname" required>
+    <label for="contact"><b>Contact Number</b></label>
+    <input type="text" placeholder="Enter Contact Number" v-model="contact" required>
 
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <label for="address"><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" v-model="address" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" v-model="username" required>
 
-    <label for="psw"><b>Confirm Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw" required>
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" v-model="password" required>
 
-    <a href="/login" class="btn btn-primary">Register</a>
+    
+    <button type="submit"  class="btn btn-primary">Register</button>
 
     <a href="/login">Already have an account</a>
  </div>
 </form>
 
-</body>
-</template>
 
+</template>
+<script>
+import axios from 'axios';
+
+export default {
+  data() {
+    return {
+      full_name: '',
+      position: '',
+      contact: '',
+      address: '',
+      username: '',
+      password: '',
+    };
+  },
+  methods: {
+    async register() {
+        
+      try {
+        const formData = new FormData();
+        formData.append('full_name', this.full_name);
+        formData.append('position', this.position);
+        formData.append('contact', this.contact);
+        formData.append('address', this.address);
+        formData.append('username', this.username);
+        formData.append('password', this.password);
+
+        const response = await axios.post('/user/register', formData, {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        });
+
+        // Handle the response as needed
+        console.log(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    },
+  },
+};
+</script>
 <style>
 body {
  font-family: Arial, sans-serif;

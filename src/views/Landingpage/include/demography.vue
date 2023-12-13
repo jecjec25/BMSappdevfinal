@@ -25,7 +25,7 @@
                         <tbody>
                             <tr v-for=" info in info">
                                 <td>{{ info.number }}</td>
-                                <td>{{ info.barangay }}</td>
+                                <td>{{ info.barangay_name }}</td>
                                 <td>{{ info.landarea }}</td>
                                 <td>{{ info.popuden2020 }}</td>
                                 <td>{{ info.popu2020 }}</td>
