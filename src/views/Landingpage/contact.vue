@@ -8,7 +8,7 @@
 					<h2 style="font-family: 'Poppins';">
 						Send E-mail
 					</h2>
-				</div>
+				</div>  
 				<div class="bg-dark bg-gradient min-vh-100">
 					<div class="container">
 						<div class="row my-5">

@@ -1,12 +1,12 @@
 <template>
     <headers/>
-    <section id="works" class="works">
+    <section id="works" class="works" style="background-color:  #99bbff"> 
         <div class="container" >
             
             <div class="section-header">
             <br>
             <br>				
-                <h2 style="color:    rgb(20, 34, 73);">About</h2>
+                <h2 style="color:    rgb(20, 34, 73);">About Us</h2>
                 <img src="@/assets/img/img2.jpg" alt="General Information">
                 <p class="left-align-text" style="color: rgb(19, 1, 70); font-family: 'Poppins';">
                     <br>

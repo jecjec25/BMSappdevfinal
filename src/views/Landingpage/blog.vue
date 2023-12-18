@@ -1,6 +1,6 @@
 <template>
 	<headers/>
-<section id="blog" class="blog" style="font-family: 'Poppins';">
+<section id="blog" class="blog" style="background-color: #ecd9c6">
 			<div class="container">
 				<div class="section-header">
 					<h2 style="font-family: 'Poppins';">news and articles</h2>

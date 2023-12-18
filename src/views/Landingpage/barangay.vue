@@ -1,6 +1,6 @@
 <template>
 	<headers/>
-	<section id="explore" class="explore" style="background-color: #ff66b3; ">
+	<section id="explore" class="explore" body="background-image: img src: background.jpg); ">
 			<div class="container">
 				<div class="section-header" style="font-family: 'Poppins';">
 					<h2 style="color: black;font-family: 'Poppins'; ">Barangay</h2>
