@@ -27,6 +27,7 @@ class UserController extends ResourceController
             'contact' => 'required',
             'address' =>  'required|min_length[2]',
             'username' =>'required|min_length[4]',
+            'email'=> 'required|min_length[4]',
             'password' => 'required|min_length[2]',
         ];
 
@@ -38,6 +39,7 @@ class UserController extends ResourceController
                 'contact' => $this->request->getVar('contact'),
                 'address' => $this->request->getVar('address'),
                 'username' => $this->request->getVar('username'),
+                'email' => $this->request->getVar('email'),
                 'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
             ];
 
@@ -61,43 +63,32 @@ class UserController extends ResourceController
 }
 
 
-    //Login Authentication
-    public function loginAuth()
-    {
-        try {
+        public function loginAuth()
+        {
             $session = session();
+            $email = $this->request->getVar('email');
             $username = $this->request->getVar('username');
             $password = $this->request->getVar('password');
-            
-            $user = $this->user->where('username', $username)->first();
+
+            $data = $this->user->where('email', $email)->first();
             $error = [
                 'login' => false,
-                'error' => 'Invalid username or password.'
+                'error' => 'invalid username or password'
             ];
-            if(is_null($user)) {
-                return $this->respond($error);
-            }
-            $pwd_verify = password_verify($password, $user['Password']);
-            if(!$pwd_verify) {
-                return $this->respond($error);
-            }
-            $key = getenv('JWT_SECRET');
-            $iat = time(); // current timestamp value
-            $exp = $iat + 3600;
-            $token = JWT::encode($payload, $key, 'HS256');
-    
-            $response = [
-                'login' => true,
-                'message' => 'Login Succesful',
-                'token' => $token
-            ];
-            
-            return $this->respond($response, 200);
-        } catch (\Throwable $e) {
-            //throw $th;
-            return $this->respond(["error" => "Error: " . $e->getMessage()],);
-        }
 
-    }
+            if ($data) {
+                $pass = $data['password'];
+                $authenticatePassword = password_verify($password, $pass);
+
+                if ($authenticatePassword) {
+         
+                    return $this->respond(['login' => true]);
+                } else {
+                    return $this->respond($error);
+                }
+            } else {
+                return $this->respond($error);
+            }
+        }
 }
 

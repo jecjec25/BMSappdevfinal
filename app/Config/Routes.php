@@ -26,6 +26,7 @@ $routes->get('brgyofficials', 'BarangayController::barangayofficial');
 
 $routes->group('user', static function($routes){
 $routes->post('register', 'UserController::register');
+$routes->post('loginAuth', 'UserController::loginAuth');
 });
 $routes->get('resident', 'ResidentController::residentCount');
 $routes->post('/send', 'EmailController::sendEmail');
